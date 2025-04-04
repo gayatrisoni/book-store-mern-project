@@ -12,6 +12,7 @@ import 'swiper/css/navigation';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const categories = ["choose a genre", "Business", "Fiction", "Horror", "Adventure"]
 
@@ -30,7 +31,7 @@ const TopSellers = () => {
    const filteredBooks = selectedCategory === "choose a genre" ? books : books.filter(book => book.category === selectedCategory.toLowerCase())
 
   return (
-    <div className='py-10'>
+    <div className='py-6'>
       <h2 className='text-3xl font-semibold mb-6'>Top Sellers</h2>
       <div className='mb-8 flex items-center'>
         <select name="category" id="category" 
@@ -80,12 +81,7 @@ const TopSellers = () => {
         
       </Swiper>
 
-      {/* {
-        filteredBooks.map((book, index) => (
-            <BookCard key={index} book={book}/>
-        ) )
-      }
-       */}
+      
     </div>
   )
 }

@@ -11,7 +11,7 @@ import avatar from "../assets/avatar.png"
 const Navbar = () => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false) ;
   console.log(isDropDownOpen)
-  const currentUser = true;
+  const currentUser = false;
 
   const navigation = [
     {name: "Dashboard", href: "/dashbaord"},

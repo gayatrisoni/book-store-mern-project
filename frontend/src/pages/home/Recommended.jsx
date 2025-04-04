@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const Recommended = () => {
 
@@ -23,7 +24,7 @@ const Recommended = () => {
     }, [])
 
   return (
-    <div>
+    <div className='py-16'>
       <h2 className='text-3xl font-semibold mb-6'>Recommended for you </h2>
 
       <Swiper
